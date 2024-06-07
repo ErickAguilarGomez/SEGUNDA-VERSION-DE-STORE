@@ -1,5 +1,5 @@
 function printDetails(id) {
-  const product = products.find((each) => each.id === id);
+  const product = products.find((each) => each.id == id);
   const detailsTemplate = `
     <section class="product-images-block">
     <div class="product-images">

@@ -3,7 +3,7 @@ function printProductCards(arrayOfProducts, idSelector) {
   const productsSelector = document.getElementById(idSelector);
   if (arrayOfProducts.length > 0) {
     for (const element of arrayOfProducts) {
-      productsTemplate = productsTemplate + createProductCard(element);
+      productsTemplate+= createProductCard(element);
     }
     productsSelector.innerHTML = productsTemplate;
   } else {
